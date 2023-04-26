@@ -24,22 +24,7 @@ public class QuizGradeAverage : MonoBehaviour
 
         Debug.Log("Average: " + average);
         
-        if (average >= 90)
-        {
-            Debug.Log("Grade A");
-        }
-        else if (average is >= 80 and < 90)
-        {
-            Debug.Log("Grade B");
-        }
-        else if (average is > 70 and < 80)
-        {
-            Debug.Log("Grade C");
-        }
-        else
-        {
-            Debug.Log("Grade F");
-        }
+        
     }
 
     
