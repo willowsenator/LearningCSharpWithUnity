@@ -20,11 +20,5 @@ public class Player : MonoBehaviour
         Debug.Log("IsAllKeys: " + hasAllKeys);
         Debug.Log("AmmoCount: " + ammoCount);
     }
-
-    private void Update()
-    {
-        if (!Input.GetKeyDown(KeyCode.Space)) return;
-        score += 10;
-    }
 }
 
