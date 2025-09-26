@@ -11,7 +11,7 @@ public class SpeedChallenge : MonoBehaviour
     private void Start()
     {
         cubeRigidBody = cube.GetComponent<Rigidbody>();
-        cubeRigidBody.velocity = new Vector3();
+        cubeRigidBody.linearVelocity = new Vector3();
     }
 
     private void Update()
@@ -21,13 +21,13 @@ public class SpeedChallenge : MonoBehaviour
         {
             speed += 0.5f;
            
-            cubeRigidBody.velocity = cube.transform.forward * speed;
+            cubeRigidBody.linearVelocity = cube.transform.forward * speed;
         }
 
         if (Input.GetKeyDown(KeyCode.A) && speed > 0)
         {
             speed -= 0.5f;
-            cubeRigidBody.velocity = cube.transform.forward * speed;
+            cubeRigidBody.linearVelocity = cube.transform.forward * speed;
         }
 
         if (speed > 20)
