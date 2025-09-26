@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class PrintOut : MonoBehaviour
 {
-    [SerializeField]
-    private int apples;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        StartCoroutine(PrintApples());
+        StartCoroutine(PrintWays());
     }
 
     // Update is called once per frame
@@ -17,12 +15,30 @@ public class PrintOut : MonoBehaviour
         
     }
 
-    private IEnumerator PrintApples()
+    private static IEnumerator PrintWays()
     {
-        for (var i = 0; i < 100; i++)
+        for (var i = 0; i < 30; i++)
         {
-            apples++;
-            yield return new WaitForSeconds(1); // Wait for 1 second between prints
+            if (i < 10)
+            {
+                Debug.Log(i);
+            }
+            else if (i < 19)
+            {
+                if (i % 2 == 0)
+                {
+                    Debug.Log(i);
+                }
+                
+            }
+            else
+            {
+                if (i % 2 != 0)
+                {
+                    Debug.Log(i);
+                }
+            }
+            yield return new WaitForSeconds(0.5f);
         }
     }
 }
