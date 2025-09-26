@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PrintOut : MonoBehaviour
+public class UltimatePrintOuts : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
