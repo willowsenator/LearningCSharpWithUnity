@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "RandomChooseInput",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "88d635dd-239f-48cc-a99a-040ba4a0147e",
+            "actions": [
+                {
+                    "name": "RandomChoose",
+                    "type": "Button",
+                    "id": "0778b81d-9afa-4d52-b278-90d49ec86d78",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d5ef7375-a44b-4f5c-aaeb-ae1288ced2ad",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RandomChoose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

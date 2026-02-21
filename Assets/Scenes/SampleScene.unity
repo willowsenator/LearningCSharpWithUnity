@@ -221,10 +221,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 576315993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 759d75741045f0b49b2108c909ffcc33, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e8a68afa7d78224d82292dd7ed7d70c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 0
+  m_EditorClassIdentifier: Assembly-CSharp::RandomChoose
+  names:
+  - alice
+  - david
+  - tom
+  - jerry
+  ages: 1400000010000000180000001e000000
+  cars:
+  - renault
+  - audi
+  - bmw
+  - ford
+  randomChooseInput: {fileID: 2917683831574228433, guid: 0e9909ad0bced964882216c1f619876b, type: 3}
 --- !u!1 &1295779859
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,14 +261,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295779859}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
