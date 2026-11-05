@@ -1,0 +1,13 @@
+{
+  "enabledPlugins": {
+    "unity@unity-agent-plugin": true
+  },
+  "extraKnownMarketplaces": {
+    "unity-agent-plugin": {
+      "source": {
+        "source": "github",
+        "repo": "Unity-Technologies/unity-agent-plugin"
+      }
+    }
+  }
+}
