@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class Character : MonoBehaviour
 {
@@ -15,9 +12,9 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-             points += 10;
+            points += 10;
         }
 
         if (points < 50 || hasMessage) return;
